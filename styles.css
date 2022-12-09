@@ -1,3 +1,9 @@
 body {
-  color: red;
+  background-color: #23d9dc;
+  z-index: -100;
+}
+
+.landingPage {
+  background-color: #237cdc;
+  z-index: 100;
 }/*# sourceMappingURL=styles.css.map */

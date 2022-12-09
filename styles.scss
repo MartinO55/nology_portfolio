@@ -1,5 +1,11 @@
 @import "theme";
 
 body {
-  color: $primarycolor;
+  background-color: $primaryColor;
+  z-index: -100;
+}
+
+.landingPage {
+  background-color: $secondaryColor;
+  z-index: 100;
 }
