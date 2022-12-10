@@ -1,5 +1,4 @@
 body {
-  background-color: #23d9dc;
   /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 }
 body .aboutMe {
@@ -26,17 +25,7 @@ body .contactMe {
   position: relative;
   z-index: 1;
 }
-body .testItem {
-  /*Scale the x or y axis in the transform function to create an oval*/
-  position: relative;
-  z-index: -1;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: black;
-  transform: translateY(-80%) scaleX(200%);
-}
-body .Triangle1 {
+body #Object1 {
   position: relative;
   z-index: -1;
   width: 0px;
@@ -52,7 +41,7 @@ body .Triangle1 {
   border-right: 70px solid transparent;
   border-bottom: 70px solid #a7aeb8;
 }
-body .Triangle2 {
+body #Object2 {
   position: relative;
   z-index: -1;
   width: 0px;
@@ -71,7 +60,7 @@ body .Triangle2 {
   z-index: -2;
   transform: rotate(120deg) translate(-70%, -460%) scale(400%);
 }
-body .Triangle3 {
+body #Object3 {
   position: relative;
   z-index: -1;
   width: 0px;
@@ -88,5 +77,5 @@ body .Triangle3 {
   border-bottom: 70px solid #a7aeb8;
   border-bottom: 70px solid black;
   z-index: -3;
-  transform: rotate(120deg) translate(-90%, -600%) scale(400%);
+  transform: rotate(120deg) translate(-100%, -600%) scale(400%);
 }/*# sourceMappingURL=styles.css.map */

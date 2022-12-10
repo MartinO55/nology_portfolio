@@ -1,7 +1,6 @@
 @import "theme";
 
 body {
-  background-color: $primaryColor;
   @mixin frontItem {
     /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
     position: relative;
@@ -66,28 +65,22 @@ body {
     background-color: $tertiaryColor;
     @include frontItem();
   }
-  .testItem {
-    @include circle();
-    background-color: $black;
 
-    transform: translateY(-80%) scaleX(200%);
-  }
-
-  .Triangle1 {
+  #Object1 {
     @include triangle--BigAcute();
   }
 
-  .Triangle2 {
+  #Object2 {
     @include triangle--BigAcute();
     border-bottom: 70px solid $greyscale2;
     z-index: -2;
     transform: rotate(120deg) translate(-70%, -460%) scale(400%);
   }
 
-  .Triangle3 {
+  #Object3 {
     @include triangle--BigAcute();
     border-bottom: 70px solid $black;
     z-index: -3;
-    transform: rotate(120deg) translate(-90%, -600%) scale(400%);
+    transform: rotate(120deg) translate(-100%, -600%) scale(400%);
   }
 }
