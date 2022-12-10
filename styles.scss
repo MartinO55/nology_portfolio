@@ -1,6 +1,7 @@
 @import "theme";
 
 body {
+  overflow-x: hidden; /*keeps the background from screwing with sizing on mobile devices*/
   @mixin frontItem {
     /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
     position: relative;

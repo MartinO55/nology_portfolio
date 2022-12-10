@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden; /*keeps the background from screwing with sizing on mobile devices*/
   /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 }
 body .aboutMe {
