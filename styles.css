@@ -14,6 +14,14 @@ body .projectsPage {
   position: relative;
   z-index: 1;
 }
+body .projectsPage .githubLogo__ForLinks {
+  height: 2rem;
+  border-radius: 50%;
+}
+body .projectsPage .project__image {
+  height: 17.5rem;
+  border-radius: 1rem;
+}
 body .landingPage {
   background-color: rgba(35, 124, 220, 0.4784313725);
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
