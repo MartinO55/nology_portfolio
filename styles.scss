@@ -50,6 +50,40 @@ body {
     border-bottom: 70px solid $greyScale1;
   }
 
+  .Navbar {
+    display: flex;
+    justify-content: flex-end;
+
+    .NavLinks {
+      justify-content: right;
+      margin: 0.5rem;
+      margin-bottom: 1rem;
+
+      a {
+        padding: 1rem;
+        border-radius: 1rem;
+        transition: 0.5s;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  .landingPage {
+    background-color: $secondaryColor;
+    @include frontItem();
+    display: flex;
+    justify-content: right;
+    header {
+      text-align: right;
+      font-size: 550%; //sizing is right on desktop for design purposes, but fails on mobile
+    }
+    //TODO ACTUAL LANDING PAGE HERO
+  }
   .aboutMe {
     @include frontItem();
     background-color: $tertiaryColor;
@@ -68,13 +102,6 @@ body {
       height: 2rem;
       border-radius: 50%;
     }
-  }
-
-  .landingPage {
-    background-color: $secondaryColor;
-    @include frontItem();
-
-    //TODO ACTUAL LANDING PAGE HERO
   }
 
   .contactMe {
