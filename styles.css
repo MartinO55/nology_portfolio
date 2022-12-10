@@ -31,9 +31,8 @@ body .testItem {
   z-index: -1;
   height: 100px;
   width: 100px;
-  border-radius: 50%;
   background-color: black;
-  transform: translateY(-80%) scale(200%);
+  transform: translateY(-80%) scaleX(200%);
 }
 body .testTriangle {
   position: relative;
