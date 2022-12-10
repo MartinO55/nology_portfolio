@@ -14,13 +14,13 @@ body .projectsPage {
   position: relative;
   z-index: 1;
 }
-body .projectsPage .githubLogo__ForLinks {
-  height: 2rem;
-  border-radius: 50%;
-}
 body .projectsPage .project__image {
   height: 17.5rem;
   border-radius: 1rem;
+}
+body .projectsPage .githubLogo__ForLinks {
+  height: 2rem;
+  border-radius: 50%;
 }
 body .landingPage {
   background-color: rgba(35, 124, 220, 0.4784313725);
@@ -29,10 +29,18 @@ body .landingPage {
   z-index: 1;
 }
 body .contactMe {
-  background-color: rgba(35, 220, 131, 0.7137254902);
+  background-color: rgba(35, 124, 220, 0.4784313725);
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
+}
+body .contactMe .linkedinLogo__ForLinks {
+  height: 3rem;
+  border-radius: 50%;
+}
+body .contactMe .githubLogo__ForLinks {
+  height: 3rem;
+  border-radius: 50%;
 }
 body #Object1 {
   position: relative;

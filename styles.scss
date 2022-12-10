@@ -56,14 +56,13 @@ body {
     background-color: $secondaryColor;
     @include frontItem();
 
-    .githubLogo__ForLinks {
-      height: 2rem;
-      border-radius: 50%;
-    }
-
     .project__image {
       height: 17.5rem;
       border-radius: 1rem;
+    }
+    .githubLogo__ForLinks {
+      height: 2rem;
+      border-radius: 50%;
     }
   }
 
@@ -73,8 +72,16 @@ body {
   }
 
   .contactMe {
-    background-color: $tertiaryColor;
+    background-color: $secondaryColor;
     @include frontItem();
+    .linkedinLogo__ForLinks {
+      height: 3rem;
+      border-radius: 50%;
+    }
+    .githubLogo__ForLinks {
+      height: 3rem;
+      border-radius: 50%;
+    }
   }
 
   #Object1 {
