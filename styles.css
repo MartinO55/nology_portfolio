@@ -27,22 +27,66 @@ body .contactMe {
   z-index: 1;
 }
 body .testItem {
+  /*Scale the x or y axis in the transform function to create an oval*/
   position: relative;
   z-index: -1;
   height: 100px;
   width: 100px;
+  border-radius: 50%;
   background-color: black;
   transform: translateY(-80%) scaleX(200%);
 }
-body .testTriangle {
+body .Triangle1 {
   position: relative;
   z-index: -1;
-  transform: rotate(90deg) translate(-200%, -300%);
-  z-index: -2;
-  /*And this is how we make a triangle*/
   width: 0px;
   height: 0px;
-  border-left: 50px solid transparent;
+  /*Override as desired, but one or more of these values must be overriden; 
+  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  transform: rotate(120deg) translate(-50%, -300%) scale(400%);
+  z-index: -1;
+  border-left: 250px solid transparent;
   border-right: 70px solid transparent;
-  border-bottom: 80px solid #a7aeb8;
+  border-bottom: 70px solid #a7aeb8;
+}
+body .Triangle2 {
+  position: relative;
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  /*Override as desired, but one or more of these values must be overriden; 
+  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  transform: rotate(120deg) translate(-50%, -300%) scale(400%);
+  z-index: -1;
+  border-left: 250px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid #a7aeb8;
+  border-bottom: 70px solid #8b94a1;
+  z-index: -2;
+  transform: rotate(120deg) translate(-70%, -460%) scale(400%);
+}
+body .Triangle3 {
+  position: relative;
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  /*Override as desired, but one or more of these values must be overriden; 
+  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  transform: rotate(120deg) translate(-50%, -300%) scale(400%);
+  z-index: -1;
+  border-left: 250px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid #a7aeb8;
+  border-bottom: 70px solid black;
+  z-index: -3;
+  transform: rotate(120deg) translate(-90%, -600%) scale(400%);
 }/*# sourceMappingURL=styles.css.map */

@@ -15,12 +15,14 @@ body {
   /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 
   @mixin square {
+    /*Scale the x or y axis in the transform function to create a rectangle*/
     @include background();
     height: 100px;
     width: 100px;
   }
 
   @mixin circle {
+    /*Scale the x or y axis in the transform function to create an oval*/
     @include background();
     height: 100px;
     width: 100px;
@@ -31,9 +33,19 @@ body {
     @include background();
     width: 0px;
     height: 0px;
-    border-left: 100px solid transparent; /*Override as desired, but one or more of these values must be overriden*/
+    /*Override as desired, but one or more of these values must be overriden; 
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-bottom: 100px solid transparent;
+  }
+  @mixin triangle--BigAcute {
+    @include triangle();
+    transform: rotate(120deg) translate(-50%, -300%) scale(400%);
+    z-index: -1;
+    border-left: 250px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid $greyScale1;
   }
 
   .aboutMe {
@@ -55,21 +67,27 @@ body {
     @include frontItem();
   }
   .testItem {
-    @include square();
+    @include circle();
     background-color: $black;
 
     transform: translateY(-80%) scaleX(200%);
   }
 
-  .testTriangle {
-    @include background();
-    transform: rotate(90deg) translate(-200%, -300%);
+  .Triangle1 {
+    @include triangle--BigAcute();
+  }
+
+  .Triangle2 {
+    @include triangle--BigAcute();
+    border-bottom: 70px solid $greyscale2;
     z-index: -2;
-    /*And this is how we make a triangle*/
-    width: 0px;
-    height: 0px;
-    border-left: 50px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 80px solid $greyScale1;
+    transform: rotate(120deg) translate(-70%, -460%) scale(400%);
+  }
+
+  .Triangle3 {
+    @include triangle--BigAcute();
+    border-bottom: 70px solid $black;
+    z-index: -3;
+    transform: rotate(120deg) translate(-90%, -600%) scale(400%);
   }
 }
