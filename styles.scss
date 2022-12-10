@@ -2,10 +2,74 @@
 
 body {
   background-color: $primaryColor;
-  z-index: -100;
-}
+  @mixin frontItem {
+    /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
+    position: relative;
+    z-index: 1;
+  }
+  @mixin background {
+    position: relative;
+    z-index: -1;
+  }
 
-.landingPage {
-  background-color: $secondaryColor;
-  z-index: 100;
+  /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
+
+  @mixin square {
+    @include background();
+    height: 100px;
+    width: 100px;
+  }
+
+  @mixin circle {
+    @include background();
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  @include triangle {
+    @include background();
+    width: 0px;
+    height: 0px;
+    border-left: 100px solid transparent; /*Override as desired, but one or more of these values must be overriden*/
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+  }
+
+  .aboutMe {
+    @include frontItem();
+    background-color: $tertiaryColor;
+  }
+  .projectsPage {
+    background-color: $secondaryColor;
+    @include frontItem();
+  }
+
+  .landingPage {
+    background-color: $secondaryColor;
+    @include frontItem();
+  }
+
+  .contactMe {
+    background-color: $tertiaryColor;
+    @include frontItem();
+  }
+  .testItem {
+    @include circle();
+    background-color: $black;
+
+    transform: translateY(-80%) scaleX(200%);
+  }
+
+  .testTriangle {
+    @include background();
+    transform: rotate(90deg) translate(-200%, -300%);
+    z-index: -2;
+    /*And this is how we make a triangle*/
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 80px solid $greyScale1;
+  }
 }

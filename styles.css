@@ -1,9 +1,49 @@
 body {
   background-color: #23d9dc;
-  z-index: -100;
+  /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 }
-
-.landingPage {
-  background-color: #237cdc;
-  z-index: 100;
+body .aboutMe {
+  /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
+  position: relative;
+  z-index: 1;
+  background-color: rgba(35, 220, 131, 0.7137254902);
+}
+body .projectsPage {
+  background-color: rgba(35, 124, 220, 0.4784313725);
+  /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
+  position: relative;
+  z-index: 1;
+}
+body .landingPage {
+  background-color: rgba(35, 124, 220, 0.4784313725);
+  /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
+  position: relative;
+  z-index: 1;
+}
+body .contactMe {
+  background-color: rgba(35, 220, 131, 0.7137254902);
+  /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
+  position: relative;
+  z-index: 1;
+}
+body .testItem {
+  position: relative;
+  z-index: -1;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translateY(-80%) scale(200%);
+}
+body .testTriangle {
+  position: relative;
+  z-index: -1;
+  transform: rotate(90deg) translate(-200%, -300%);
+  z-index: -2;
+  /*And this is how we make a triangle*/
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 80px solid #a7aeb8;
 }/*# sourceMappingURL=styles.css.map */
