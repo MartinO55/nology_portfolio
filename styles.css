@@ -78,4 +78,21 @@ body #Object3 {
   border-bottom: 70px solid black;
   z-index: -3;
   transform: rotate(120deg) translate(-100%, -600%) scale(400%);
+}
+body #Object4 {
+  /*Scale the x or y axis in the transform function to create a rectangle*/
+  position: relative;
+  z-index: -1;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+body #Object5 {
+  /*Scale the x or y axis in the transform function to create an oval*/
+  position: relative;
+  z-index: -1;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #8b94a1;
 }/*# sourceMappingURL=styles.css.map */

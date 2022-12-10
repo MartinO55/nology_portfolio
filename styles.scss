@@ -83,4 +83,13 @@ body {
     z-index: -3;
     transform: rotate(120deg) translate(-100%, -600%) scale(400%);
   }
+
+  #Object4 {
+    @include square();
+    background-color: $black;
+  }
+  #Object5 {
+    @include circle();
+    background-color: $greyscale2;
+  }
 }
