@@ -40,16 +40,46 @@ body .aboutMe {
   background-color: rgba(35, 220, 131, 0.7137254902);
 }
 body .projectsPage {
-  background-color: rgba(35, 124, 220, 0.4784313725);
+  background-color: #23d9dc;
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
 }
-body .projectsPage .project__image {
-  height: 17.5rem;
-  border-radius: 1rem;
+body .projectsPage .Project__List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
-body .projectsPage .githubLogo__ForLinks {
+body .projectsPage .Projects__Heading {
+  margin: 0.5rem;
+}
+body .projectsPage .Project__Card {
+  display: flex;
+  padding: 1rem;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  flex-direction: row;
+}
+body .projectsPage .Project__Card .project__image {
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+body .projectsPage .Project__Card .project__blurb {
+  max-width: 30vw;
+  padding: 0.5rem;
+}
+body .projectsPage .Project__Card .project__links {
+  display: flex;
+  flex-direction: column;
+}
+body .projectsPage .Project__Card .project__links .externalLinkLogo__ForLinks {
+  height: 2rem;
+  border-radius: 10%;
+}
+body .projectsPage .Project__Card .project__links .githubLogo__ForLinks {
   height: 2rem;
   border-radius: 50%;
 }

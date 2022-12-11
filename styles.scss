@@ -1,8 +1,6 @@
 @import "theme";
 
 body {
-  //TODO NAVBAR STYLING
-
   overflow-x: hidden; /*keeps the background from screwing with sizing on mobile devices*/
   @mixin frontItem {
     /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
@@ -57,7 +55,7 @@ body {
     .NavLinks {
       justify-content: right;
       margin: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1rem; //correctly aligns bottom of navbar with hero
 
       a {
         padding: 1rem;
@@ -88,20 +86,57 @@ body {
     @include frontItem();
     background-color: $tertiaryColor;
   }
+
   .projectsPage {
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     @include frontItem();
 
-    //TODO CARDS FOR EACH PROJECT
+    .Project__List {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
 
-    .project__image {
-      height: 17.5rem;
-      border-radius: 1rem;
+    @mixin projectCard {
+      display: flex;
+      padding: 1rem;
+      max-height: min-content;
+      flex-direction: row;
     }
-    .githubLogo__ForLinks {
-      height: 2rem;
-      border-radius: 50%;
+    .Projects__Heading {
+      margin: 0.5rem;
     }
+
+    .Project__Card {
+      @include projectCard();
+
+      .project__image {
+        height: 20rem;
+        border-radius: 1rem;
+        padding: 0.5rem;
+      }
+      .project__blurb {
+        max-width: 30vw;
+        padding: 0.5rem;
+      }
+
+      .project__links {
+        display: flex;
+        flex-direction: column;
+
+        .externalLinkLogo__ForLinks {
+          height: 2rem;
+          border-radius: 10%;
+        }
+        .githubLogo__ForLinks {
+          height: 2rem;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    //TODO CARDS FOR EACH PROJECT
   }
 
   .contactMe {
