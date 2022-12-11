@@ -109,11 +109,7 @@ body .contactMe .githubLogo__ForLinks {
   height: 3rem;
   border-radius: 50%;
 }
-body #triangleGroup1 {
-  transform: translateY(-180rem) translateX(30rem) rotate(20deg);
-  transform-origin: center;
-}
-body #triangleGroup1 #Object1 {
+body .background__ObjectGroup {
   position: relative;
   z-index: -1;
   width: 0px;
@@ -123,13 +119,10 @@ body #triangleGroup1 #Object1 {
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   border-bottom: 100px solid transparent;
-  z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 70px solid #a7aeb8;
-  transform: scale(550%);
+  top: 0;
+  position: fixed;
 }
-body #triangleGroup1 #Object2 {
+body .background__ObjectGroup #Object1 {
   position: relative;
   z-index: -1;
   width: 0px;
@@ -139,14 +132,14 @@ body #triangleGroup1 #Object2 {
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   border-bottom: 100px solid transparent;
+  border-right: 10vw solid transparent;
+  border-bottom: 100vw solid transparent;
   z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 70px solid #8b94a1;
+  border-left: 19vw solid black;
+  transform: translateX(-20%);
   z-index: -2;
-  transform: scale(550%);
 }
-body #triangleGroup1 #Object3 {
+body .background__ObjectGroup #Object2 {
   position: relative;
   z-index: -1;
   width: 0px;
@@ -156,94 +149,10 @@ body #triangleGroup1 #Object3 {
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   border-bottom: 100px solid transparent;
+  border-right: 10vw solid transparent;
+  border-bottom: 100vw solid transparent;
   z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 70px solid black;
-  z-index: -3;
-  transform: scale(550%);
-}
-body #triangleGroup1 #Object4 {
-  position: relative;
+  border-left: 19vw solid rgb(78, 77, 77);
+  transform: translateX(30%);
   z-index: -1;
-  width: 0px;
-  height: 0px;
-  /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 70px solid white;
-  z-index: -4;
-  transform: scale(550%);
-}
-body #triangleGroup2 {
-  transform: translateX(10%) translateY(-500%) rotateZ(90deg) scale(200%);
-  transform-origin: center;
-}
-body #triangleGroup2 #Object5 {
-  position: relative;
-  z-index: -1;
-  width: 0px;
-  height: 0px;
-  /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 70px solid white;
-}
-body #triangleGroup2 #Object6 {
-  position: relative;
-  z-index: -1;
-  width: 0px;
-  height: 0px;
-  /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  transform: scale(800%);
-  border-bottom: 70px solid #a7aeb8;
-}
-body #triangleGroup2 #Object7 {
-  position: relative;
-  z-index: -1;
-  width: 0px;
-  height: 0px;
-  /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  transform: scale(800%);
-  border-bottom: 70px solid #8b94a1;
-}
-body #triangleGroup2 #Object8 {
-  position: relative;
-  z-index: -1;
-  width: 0px;
-  height: 0px;
-  /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  z-index: -1;
-  border-left: 250px solid transparent;
-  border-right: 70px solid transparent;
-  transform: scale(800%);
-  border-bottom: 70px solid black;
 }/*# sourceMappingURL=styles.css.map */
