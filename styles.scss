@@ -37,8 +37,8 @@ body {
     /*Override as desired, but one or more of these values must be overriden; 
     specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
     border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 100vw solid transparent;
   }
   @mixin triangle--BigAcute {
     @include triangle();
@@ -169,17 +169,174 @@ body {
     position: fixed;
 
     #Object1 {
-      @include triangle--BigAcute();
+      @include triangle();
+
       border-left: 19vw solid black;
-      transform: translateX(-20%);
-      z-index: -2;
+      transform: translateX(-30%);
+      z-index: -1;
     }
 
     #Object2 {
-      @include triangle--BigAcute();
-      border-left: 19vw solid rgb(78, 77, 77);
-      transform: translateX(30%);
-      z-index: -1;
+      @include triangle();
+
+      border-left: 19vw solid rgb(29, 29, 29);
+      transform: translateX(-20%) translateY(-100%);
+      z-index: -2;
+    }
+    #Object3 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(39, 39, 39);
+      transform: translateX(-10%) translateY(-200%);
+      z-index: -3;
+    }
+    #Object4 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(49, 49, 49);
+      transform: translateX(0%) translateY(-300%);
+      z-index: -4;
+    }
+
+    #Object5 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(59, 59, 59);
+      transform: translateX(10%) translateY(-400%);
+      z-index: -5;
+    }
+    #Object6 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(69, 69, 69);
+      transform: translateX(20%) translateY(-500%);
+      z-index: -6;
+    }
+    #Object7 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(79, 79, 79);
+      transform: translateX(30%) translateY(-600%);
+      z-index: -7;
+    }
+    #Object8 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(89, 89, 89);
+      transform: translateX(40%) translateY(-700%);
+      z-index: -8;
+    }
+    #Object9 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(99, 99, 99);
+      transform: translateX(50%) translateY(-800%);
+      z-index: -9;
+    }
+    #Object10 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(109, 109, 109);
+      transform: translateX(60%) translateY(-900%);
+      z-index: -10;
+    }
+    #Object11 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(119, 119, 119);
+      transform: translateX(70%) translateY(-1000%);
+      z-index: -11;
+    }
+    #Object12 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(129, 129, 129);
+      transform: translateX(80%) translateY(-1100%);
+      z-index: -12;
+    }
+    #Object13 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(139, 139, 139);
+      transform: translateX(90%) translateY(-1200%);
+      z-index: -13;
+    }
+    #Object14 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(149, 149, 149);
+      transform: translateX(100%) translateY(-1300%);
+      z-index: -14;
+    }
+    #Object15 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(159, 159, 159);
+      transform: translateX(110%) translateY(-1400%);
+      z-index: -15;
+    }
+    #Object16 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(169, 169, 169);
+      transform: translateX(120%) translateY(-1500%);
+      z-index: -16;
+    }
+    #Object17 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(179, 179, 179);
+      transform: translateX(130%) translateY(-1600%);
+      z-index: -17;
+    }
+    #Object18 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(189, 189, 189);
+      transform: translateX(140%) translateY(-1700%);
+      z-index: -18;
+    }
+    #Object19 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(199, 199, 199);
+      transform: translateX(150%) translateY(-1800%);
+      z-index: -19;
+    }
+    #Object20 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(209, 209, 209);
+      transform: translateX(160%) translateY(-1900%);
+      z-index: -20;
+    }
+    #Object21 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(219, 219, 219);
+      transform: translateX(170%) translateY(-2000%);
+      z-index: -21;
+    }
+    #Object22 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(229, 229, 229);
+      transform: translateX(180%) translateY(-2100%);
+      z-index: -22;
+    }
+    #Object23 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(239, 239, 239);
+      transform: translateX(190%) translateY(-2200%);
+      z-index: -23;
+    }
+    #Object24 {
+      @include triangle();
+
+      border-left: 19vw solid rgb(249, 249, 249);
+      transform: translateX(200%) translateY(-2300%);
+      z-index: -24;
     }
   }
 }
