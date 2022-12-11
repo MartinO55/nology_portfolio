@@ -9,6 +9,7 @@ body {
   }
   @mixin background {
     position: relative;
+
     z-index: -1;
   }
 
@@ -41,11 +42,9 @@ body {
   }
   @mixin triangle--BigAcute {
     @include triangle();
-    transform: rotate(120deg) translate(-50%, -300%) scale(400%);
     z-index: -1;
     border-left: 250px solid transparent;
     border-right: 70px solid transparent;
-    border-bottom: 70px solid $greyScale1;
   }
 
   .Navbar {
@@ -163,30 +162,58 @@ body {
     }
   }
 
-  #Object1 {
-    @include triangle--BigAcute();
+  #triangleGroup1 {
+    transform: translateY(-180rem) translateX(30rem) rotate(20deg);
+    transform-origin: center;
+    #Object1 {
+      @include triangle--BigAcute();
+      border-bottom: 70px solid $greyScale1;
+      transform: scale(550%);
+    }
+    #Object2 {
+      @include triangle--BigAcute();
+      border-bottom: 70px solid $greyscale2;
+      z-index: -2;
+      transform: scale(550%);
+    }
+
+    #Object3 {
+      @include triangle--BigAcute();
+      border-bottom: 70px solid $black;
+      z-index: -3;
+      transform: scale(550%);
+    }
+
+    #Object4 {
+      @include triangle--BigAcute();
+      border-bottom: 70px solid $white;
+      z-index: -4;
+      transform: scale(550%);
+    }
   }
 
-  #Object2 {
-    @include triangle--BigAcute();
-    border-bottom: 70px solid $greyscale2;
-    z-index: -2;
-    transform: rotate(120deg) translate(-70%, -460%) scale(400%);
-  }
+  #triangleGroup2 {
+    transform: translateX(10%) translateY(-500%) rotateZ(90deg) scale(200%);
+    transform-origin: center;
+    #Object5 {
+      @include triangle--BigAcute();
 
-  #Object3 {
-    @include triangle--BigAcute();
-    border-bottom: 70px solid $black;
-    z-index: -3;
-    transform: rotate(120deg) translate(-100%, -600%) scale(400%);
-  }
-
-  #Object4 {
-    @include square();
-    background-color: $black;
-  }
-  #Object5 {
-    @include circle();
-    background-color: $greyscale2;
+      border-bottom: 70px solid $white;
+    }
+    #Object6 {
+      @include triangle--BigAcute();
+      transform: scale(800%);
+      border-bottom: 70px solid $greyScale1;
+    }
+    #Object7 {
+      @include triangle--BigAcute();
+      transform: scale(800%);
+      border-bottom: 70px solid $greyscale2;
+    }
+    #Object8 {
+      @include triangle--BigAcute();
+      transform: scale(800%);
+      border-bottom: 70px solid $black;
+    }
   }
 }
