@@ -3,13 +3,22 @@ body {
   /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 }
 body .Navbar {
+  /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
+  position: relative;
+  z-index: 1;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  padding: 0.75rem;
 }
 body .Navbar .NavLinks {
-  justify-content: right;
   margin: 0.5rem;
-  margin-bottom: 1rem;
+  justify-content: center;
 }
 body .Navbar .NavLinks a {
   padding: 1rem;
@@ -20,6 +29,7 @@ body .Navbar .NavLinks a {
 }
 body .Navbar .NavLinks a:hover {
   background-color: #23d9dc;
+  cursor: pointer;
 }
 body .landingPage {
   background-color: rgba(35, 124, 220, 0.4784313725);
@@ -28,6 +38,7 @@ body .landingPage {
   z-index: 1;
   display: flex;
   justify-content: right;
+  width: 100%;
 }
 body .landingPage header {
   text-align: right;
@@ -44,6 +55,7 @@ body .projectsPage {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 body .projectsPage .Project__List {
   display: flex;

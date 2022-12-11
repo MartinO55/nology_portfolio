@@ -49,13 +49,20 @@ body {
   }
 
   .Navbar {
+    @include frontItem();
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: $white;
+    padding: 0.75rem;
 
     .NavLinks {
-      justify-content: right;
       margin: 0.5rem;
-      margin-bottom: 1rem; //correctly aligns bottom of navbar with hero
+      justify-content: center;
 
       a {
         padding: 1rem;
@@ -66,6 +73,7 @@ body {
 
         &:hover {
           background-color: $primaryColor;
+          cursor: pointer;
         }
       }
     }
@@ -76,6 +84,7 @@ body {
     @include frontItem();
     display: flex;
     justify-content: right;
+    width: 100%;
     header {
       text-align: right;
       font-size: 550%; //sizing is right on desktop for design purposes, but fails on mobile
@@ -90,6 +99,7 @@ body {
   .projectsPage {
     background-color: $primaryColor;
     @include frontItem();
+    width: 100%;
 
     .Project__List {
       display: flex;
@@ -99,6 +109,7 @@ body {
     }
 
     @mixin projectCard {
+      //so lets call this the first draft - there are a couple of different ways to do this and I'm not sure what my preference is
       display: flex;
       padding: 1rem;
       max-height: min-content;
