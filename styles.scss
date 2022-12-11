@@ -39,6 +39,11 @@ body {
     border-left: 100px solid transparent;
     border-right: 10vw solid transparent;
     border-bottom: 100vw solid transparent;
+
+    &:hover {
+      //for example - this impacts each triangle in the background separately, but doesnt work through the foreground elements
+      border-left: 19vw solid red !important;
+    }
   }
   @mixin triangle--BigAcute {
     @include triangle();
@@ -164,9 +169,9 @@ body {
   }
 
   .background__ObjectGroup {
-    @include triangle();
     top: 0;
     position: fixed;
+    transition: 1s;
 
     #Object1 {
       @include triangle();
