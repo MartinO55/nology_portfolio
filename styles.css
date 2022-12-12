@@ -1,5 +1,7 @@
+/*so I think we want everything to slide in left to*/
 body {
   overflow-x: hidden; /*keeps the background from screwing with sizing on mobile devices*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 }
 body .Navbar {
@@ -28,11 +30,11 @@ body .Navbar .NavLinks a {
   color: black;
 }
 body .Navbar .NavLinks a:hover {
-  background-color: rgba(35, 217, 220, 0.5490196078);
+  background-color: rgba(35, 124, 220, 0.4784313725);
   cursor: pointer;
 }
 body .landingPage {
-  background-color: rgba(35, 124, 220, 0.4784313725);
+  color: #0d1821;
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
@@ -48,10 +50,12 @@ body .aboutMe {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
-  background-color: rgba(35, 220, 131, 0.7137254902);
+  background-color: rgba(35, 124, 220, 0.4784313725);
+  color: #0d1821;
 }
 body .projectsPage {
-  background-color: rgba(35, 217, 220, 0.5490196078);
+  background-color: rgba(35, 124, 220, 0.4784313725);
+  color: #0d1821;
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
@@ -96,6 +100,7 @@ body .projectsPage .Project__Card .project__links .githubLogo__ForLinks {
   border-radius: 50%;
 }
 body .contactMe {
+  color: #0d1821;
   background-color: rgba(35, 124, 220, 0.4784313725);
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
@@ -121,7 +126,7 @@ body .background__ObjectGroup #Object1 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid black;
@@ -138,7 +143,7 @@ body .background__ObjectGroup #Object2 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(29, 29, 29);
@@ -155,7 +160,7 @@ body .background__ObjectGroup #Object3 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(39, 39, 39);
@@ -172,7 +177,7 @@ body .background__ObjectGroup #Object4 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(49, 49, 49);
@@ -189,7 +194,7 @@ body .background__ObjectGroup #Object5 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(59, 59, 59);
@@ -206,7 +211,7 @@ body .background__ObjectGroup #Object6 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(69, 69, 69);
@@ -223,7 +228,7 @@ body .background__ObjectGroup #Object7 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(79, 79, 79);
@@ -240,7 +245,7 @@ body .background__ObjectGroup #Object8 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(89, 89, 89);
@@ -257,7 +262,7 @@ body .background__ObjectGroup #Object9 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(99, 99, 99);
@@ -274,7 +279,7 @@ body .background__ObjectGroup #Object10 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(109, 109, 109);
@@ -291,7 +296,7 @@ body .background__ObjectGroup #Object11 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(119, 119, 119);
@@ -308,7 +313,7 @@ body .background__ObjectGroup #Object12 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(129, 129, 129);
@@ -325,7 +330,7 @@ body .background__ObjectGroup #Object13 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(139, 139, 139);
@@ -342,7 +347,7 @@ body .background__ObjectGroup #Object14 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(149, 149, 149);
@@ -359,7 +364,7 @@ body .background__ObjectGroup #Object15 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(159, 159, 159);
@@ -376,7 +381,7 @@ body .background__ObjectGroup #Object16 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(169, 169, 169);
@@ -393,7 +398,7 @@ body .background__ObjectGroup #Object17 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(179, 179, 179);
@@ -410,7 +415,7 @@ body .background__ObjectGroup #Object18 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(189, 189, 189);
@@ -427,7 +432,7 @@ body .background__ObjectGroup #Object19 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(199, 199, 199);
@@ -444,7 +449,7 @@ body .background__ObjectGroup #Object20 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(209, 209, 209);
@@ -461,7 +466,7 @@ body .background__ObjectGroup #Object21 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(219, 219, 219);
@@ -478,7 +483,7 @@ body .background__ObjectGroup #Object22 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(229, 229, 229);
@@ -495,7 +500,7 @@ body .background__ObjectGroup #Object23 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(239, 239, 239);
@@ -512,7 +517,7 @@ body .background__ObjectGroup #Object24 {
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
   specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
-  border-left: 100px solid transparent;
+  border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 19vw solid rgb(249, 249, 249);
