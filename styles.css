@@ -4,6 +4,26 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 }
+@-webkit-keyframes slideIn {
+  from {
+    margin-right: 300%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+@keyframes slideIn {
+  from {
+    margin-right: 300%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
 body .Navbar {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
@@ -45,6 +65,8 @@ body .landingPage {
 body .landingPage header {
   text-align: right;
   font-size: 550%;
+  -webkit-animation: slideIn 1.3s;
+          animation: slideIn 1.3s;
 }
 body .aboutMe {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
@@ -52,6 +74,11 @@ body .aboutMe {
   z-index: 1;
   background-color: rgba(35, 124, 220, 0.4784313725);
   color: #0d1821;
+}
+body .aboutMe .mySkills__img {
+  height: 3.5rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
 }
 body .projectsPage {
   background-color: rgba(35, 124, 220, 0.4784313725);
@@ -77,6 +104,8 @@ body .projectsPage .Project__Card {
   max-height: -moz-min-content;
   max-height: min-content;
   flex-direction: row;
+  -webkit-animation: slideIn 2s;
+          animation: slideIn 2s;
 }
 body .projectsPage .Project__Card .project__image {
   height: 20rem;
@@ -133,9 +162,6 @@ body .background__ObjectGroup #Object1 {
   transform: translateX(-30%);
   z-index: -1;
 }
-body .background__ObjectGroup #Object1:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object2 {
   position: relative;
   z-index: -1;
@@ -149,9 +175,6 @@ body .background__ObjectGroup #Object2 {
   border-left: 19vw solid rgb(29, 29, 29);
   transform: translateX(-20%) translateY(-100%);
   z-index: -2;
-}
-body .background__ObjectGroup #Object2:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object3 {
   position: relative;
@@ -167,9 +190,6 @@ body .background__ObjectGroup #Object3 {
   transform: translateX(-10%) translateY(-200%);
   z-index: -3;
 }
-body .background__ObjectGroup #Object3:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object4 {
   position: relative;
   z-index: -1;
@@ -183,9 +203,6 @@ body .background__ObjectGroup #Object4 {
   border-left: 19vw solid rgb(49, 49, 49);
   transform: translateX(0%) translateY(-300%);
   z-index: -4;
-}
-body .background__ObjectGroup #Object4:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object5 {
   position: relative;
@@ -201,9 +218,6 @@ body .background__ObjectGroup #Object5 {
   transform: translateX(10%) translateY(-400%);
   z-index: -5;
 }
-body .background__ObjectGroup #Object5:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object6 {
   position: relative;
   z-index: -1;
@@ -217,9 +231,6 @@ body .background__ObjectGroup #Object6 {
   border-left: 19vw solid rgb(69, 69, 69);
   transform: translateX(20%) translateY(-500%);
   z-index: -6;
-}
-body .background__ObjectGroup #Object6:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object7 {
   position: relative;
@@ -235,9 +246,6 @@ body .background__ObjectGroup #Object7 {
   transform: translateX(30%) translateY(-600%);
   z-index: -7;
 }
-body .background__ObjectGroup #Object7:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object8 {
   position: relative;
   z-index: -1;
@@ -251,9 +259,6 @@ body .background__ObjectGroup #Object8 {
   border-left: 19vw solid rgb(89, 89, 89);
   transform: translateX(40%) translateY(-700%);
   z-index: -8;
-}
-body .background__ObjectGroup #Object8:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object9 {
   position: relative;
@@ -269,9 +274,6 @@ body .background__ObjectGroup #Object9 {
   transform: translateX(50%) translateY(-800%);
   z-index: -9;
 }
-body .background__ObjectGroup #Object9:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object10 {
   position: relative;
   z-index: -1;
@@ -285,9 +287,6 @@ body .background__ObjectGroup #Object10 {
   border-left: 19vw solid rgb(109, 109, 109);
   transform: translateX(60%) translateY(-900%);
   z-index: -10;
-}
-body .background__ObjectGroup #Object10:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object11 {
   position: relative;
@@ -303,9 +302,6 @@ body .background__ObjectGroup #Object11 {
   transform: translateX(70%) translateY(-1000%);
   z-index: -11;
 }
-body .background__ObjectGroup #Object11:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object12 {
   position: relative;
   z-index: -1;
@@ -319,9 +315,6 @@ body .background__ObjectGroup #Object12 {
   border-left: 19vw solid rgb(129, 129, 129);
   transform: translateX(80%) translateY(-1100%);
   z-index: -12;
-}
-body .background__ObjectGroup #Object12:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object13 {
   position: relative;
@@ -337,9 +330,6 @@ body .background__ObjectGroup #Object13 {
   transform: translateX(90%) translateY(-1200%);
   z-index: -13;
 }
-body .background__ObjectGroup #Object13:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object14 {
   position: relative;
   z-index: -1;
@@ -353,9 +343,6 @@ body .background__ObjectGroup #Object14 {
   border-left: 19vw solid rgb(149, 149, 149);
   transform: translateX(100%) translateY(-1300%);
   z-index: -14;
-}
-body .background__ObjectGroup #Object14:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object15 {
   position: relative;
@@ -371,9 +358,6 @@ body .background__ObjectGroup #Object15 {
   transform: translateX(110%) translateY(-1400%);
   z-index: -15;
 }
-body .background__ObjectGroup #Object15:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object16 {
   position: relative;
   z-index: -1;
@@ -387,9 +371,6 @@ body .background__ObjectGroup #Object16 {
   border-left: 19vw solid rgb(169, 169, 169);
   transform: translateX(120%) translateY(-1500%);
   z-index: -16;
-}
-body .background__ObjectGroup #Object16:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object17 {
   position: relative;
@@ -405,9 +386,6 @@ body .background__ObjectGroup #Object17 {
   transform: translateX(130%) translateY(-1600%);
   z-index: -17;
 }
-body .background__ObjectGroup #Object17:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object18 {
   position: relative;
   z-index: -1;
@@ -421,9 +399,6 @@ body .background__ObjectGroup #Object18 {
   border-left: 19vw solid rgb(189, 189, 189);
   transform: translateX(140%) translateY(-1700%);
   z-index: -18;
-}
-body .background__ObjectGroup #Object18:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object19 {
   position: relative;
@@ -439,9 +414,6 @@ body .background__ObjectGroup #Object19 {
   transform: translateX(150%) translateY(-1800%);
   z-index: -19;
 }
-body .background__ObjectGroup #Object19:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object20 {
   position: relative;
   z-index: -1;
@@ -455,9 +427,6 @@ body .background__ObjectGroup #Object20 {
   border-left: 19vw solid rgb(209, 209, 209);
   transform: translateX(160%) translateY(-1900%);
   z-index: -20;
-}
-body .background__ObjectGroup #Object20:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object21 {
   position: relative;
@@ -473,9 +442,6 @@ body .background__ObjectGroup #Object21 {
   transform: translateX(170%) translateY(-2000%);
   z-index: -21;
 }
-body .background__ObjectGroup #Object21:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object22 {
   position: relative;
   z-index: -1;
@@ -489,9 +455,6 @@ body .background__ObjectGroup #Object22 {
   border-left: 19vw solid rgb(229, 229, 229);
   transform: translateX(180%) translateY(-2100%);
   z-index: -22;
-}
-body .background__ObjectGroup #Object22:hover {
-  border-left: 19vw solid red !important;
 }
 body .background__ObjectGroup #Object23 {
   position: relative;
@@ -507,9 +470,6 @@ body .background__ObjectGroup #Object23 {
   transform: translateX(190%) translateY(-2200%);
   z-index: -23;
 }
-body .background__ObjectGroup #Object23:hover {
-  border-left: 19vw solid red !important;
-}
 body .background__ObjectGroup #Object24 {
   position: relative;
   z-index: -1;
@@ -523,7 +483,4 @@ body .background__ObjectGroup #Object24 {
   border-left: 19vw solid rgb(249, 249, 249);
   transform: translateX(200%) translateY(-2300%);
   z-index: -24;
-}
-body .background__ObjectGroup #Object24:hover {
-  border-left: 19vw solid red !important;
 }/*# sourceMappingURL=styles.css.map */
