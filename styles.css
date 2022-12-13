@@ -95,7 +95,8 @@ body .projectsPage {
 body .projectsPage .Project__List {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 5vw;
   gap: 1rem;
 }
 body .projectsPage .Projects__Heading {
@@ -123,6 +124,7 @@ body .projectsPage .Project__Card .project__blurb {
 body .projectsPage .Project__Card .project__links {
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
 }
 body .projectsPage .Project__Card .project__links .externalLinkLogo__ForLinks {
   height: 2rem;

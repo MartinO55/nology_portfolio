@@ -140,7 +140,8 @@ body {
     .Project__List {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: left;
+      padding-left: 5vw;
       gap: 1rem;
     }
 
@@ -172,6 +173,7 @@ body {
       .project__links {
         display: flex;
         flex-direction: column;
+        margin-top: 3rem;
 
         .externalLinkLogo__ForLinks {
           height: 2rem;
