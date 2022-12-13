@@ -107,6 +107,11 @@ body {
       font-size: 550%; //sizing is right on desktop for design purposes, but fails on mobile
       animation: slideIn 1.3s;
     }
+
+    .arrow_set--forAnimation {
+      #arrow {
+      }
+    }
     //TODO ACTUAL LANDING PAGE HERO
   }
   .aboutMe {
@@ -115,9 +120,14 @@ body {
     color: $tertiaryColor;
 
     .mySkills__img {
-      height: 3.5rem;
+      height: 4rem;
       border-radius: 0.3rem;
-      margin: 0.5rem;
+      margin: 1rem;
+    }
+
+    .skillsGallery {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -181,6 +191,10 @@ body {
     color: $tertiaryColor;
     background-color: $secondaryColor;
     @include frontItem();
+
+    a {
+      color: $tertiaryColor;
+    }
     .linkedinLogo__ForLinks {
       height: 3rem;
       border-radius: 50%;

@@ -50,7 +50,7 @@ body .Navbar .NavLinks a {
   color: black;
 }
 body .Navbar .NavLinks a:hover {
-  background-color: rgba(35, 124, 220, 0.4784313725);
+  background-color: rgba(39, 135, 238, 0.7137254902);
   cursor: pointer;
 }
 body .landingPage {
@@ -72,16 +72,20 @@ body .aboutMe {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
-  background-color: rgba(35, 124, 220, 0.4784313725);
+  background-color: rgba(39, 135, 238, 0.7137254902);
   color: #0d1821;
 }
 body .aboutMe .mySkills__img {
-  height: 3.5rem;
+  height: 4rem;
   border-radius: 0.3rem;
-  margin: 0.5rem;
+  margin: 1rem;
+}
+body .aboutMe .skillsGallery {
+  display: flex;
+  flex-wrap: wrap;
 }
 body .projectsPage {
-  background-color: rgba(35, 124, 220, 0.4784313725);
+  background-color: rgba(39, 135, 238, 0.7137254902);
   color: #0d1821;
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
@@ -130,10 +134,13 @@ body .projectsPage .Project__Card .project__links .githubLogo__ForLinks {
 }
 body .contactMe {
   color: #0d1821;
-  background-color: rgba(35, 124, 220, 0.4784313725);
+  background-color: rgba(39, 135, 238, 0.7137254902);
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
+}
+body .contactMe a {
+  color: #0d1821;
 }
 body .contactMe .linkedinLogo__ForLinks {
   height: 3rem;

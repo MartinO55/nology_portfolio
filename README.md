@@ -4,7 +4,7 @@
 
 This portfolio serves as a showcase of my web development skills and projects. It contains a selection of projects I have built in the past, as well as an overview of my experience and qualifications.
 
-I have been working as a web developer for the past four years, and have experience with a variety of technologies, such as HTML, CSS, JavaScript, PHP, MySQL, and more. I have worked on a wide range of projects, from simple websites to complex web applications.
+I have been working as a web developer for the past two years, and have experience with a variety of technologies, such as HTML, CSS, JavaScript, PHP, MySQL, and more. I have worked on a wide range of projects, from simple websites to complex web applications.
 
 In this portfolio, you will find a selection of projects I have worked on. Each project includes a detailed description of the project, screenshots, and a link to the live version.
 
