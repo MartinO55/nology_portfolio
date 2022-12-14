@@ -1,9 +1,3 @@
-/*so I think we want everything to slide in left to*/
-body {
-  overflow-x: hidden; /*keeps the background from screwing with sizing on mobile devices*/
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
-}
 @-webkit-keyframes slideIn {
   from {
     margin-right: 300%;
@@ -43,6 +37,12 @@ body {
     transform: scale(-130%);
     border-bottom: 2rem solid rgba(39, 135, 238, 0.7137254902);
   }
+}
+/*so I think we want everything to slide in left to*/
+body {
+  overflow-x: hidden; /*keeps the background from screwing with sizing on mobile devices*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /*So we need more mixins for the different shapes that include the background mixin. for sanity purposes, we make the default unit 100px and scale*/
 }
 body .Navbar {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
@@ -100,13 +100,14 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
   border-bottom: 2rem solid rgba(35, 217, 220, 0.5490196078);
+  border-radius: 0.2rem;
   transform: rotateX(180deg);
   -webkit-animation: bounceAndColor 2s infinite;
           animation: bounceAndColor 2s infinite;
@@ -209,7 +210,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -223,7 +224,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -237,7 +238,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -251,7 +252,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -265,7 +266,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -279,7 +280,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -293,7 +294,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -307,7 +308,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -321,7 +322,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -335,7 +336,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -349,7 +350,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -363,7 +364,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -377,7 +378,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -391,7 +392,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -405,7 +406,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -419,7 +420,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -433,7 +434,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -447,7 +448,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -461,7 +462,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -475,7 +476,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -489,7 +490,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -503,7 +504,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -517,7 +518,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
@@ -531,7 +532,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   width: 0px;
   height: 0px;
   /*Override as desired, but one or more of these values must be overriden; 
-  specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
+    specifically, change ONE border to a color value, and change any of the pixel counts to manipulate the shape of the triangle*/
   border-left: 100vw solid transparent;
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
