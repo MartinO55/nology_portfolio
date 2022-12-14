@@ -1,6 +1,7 @@
 @import "theme";
 @import "mixins";
 @import "animations";
+
 /*so I think we want everything to slide in left to*/
 
 body {
@@ -334,3 +335,8 @@ body {
     z-index: -24;
   }
 }
+
+//so I didn't know this but breakpoints have to be after all the styling, not before. which means we import them down here
+@import "media_breakpoints";
+
+//for testing purposes, everything gets written here, then moved later
