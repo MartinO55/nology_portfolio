@@ -22,6 +22,7 @@
     .projectsPage {
       .Project__Card {
         flex-direction: column;
+        padding-left: 1vw !important;
       }
       .project__image {
         max-height: 10em;
