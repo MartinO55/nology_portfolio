@@ -109,278 +109,283 @@ body {
     }
 
     .arrow_set--forAnimation {
+      //@include triangle, now change everything about it
+
       #arrow {
+        background-color: red;
+        width: 100px;
+        height: 100px;
       }
     }
-    //TODO ACTUAL LANDING PAGE HERO
   }
-  .aboutMe {
-    @include frontItem();
-    background-color: $secondaryColor;
-    color: $tertiaryColor;
+  //TODO ACTUAL LANDING PAGE HERO
+}
+.aboutMe {
+  @include frontItem();
+  background-color: $secondaryColor;
+  color: $tertiaryColor;
 
-    .mySkills__img {
-      height: 4rem;
-      border-radius: 0.3rem;
-      margin: 1rem;
+  .mySkills__img {
+    height: 4rem;
+    border-radius: 0.3rem;
+    margin: 1rem;
+  }
+
+  .skillsGallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.projectsPage {
+  background-color: $secondaryColor;
+  color: $tertiaryColor;
+  @include frontItem();
+  width: 100%;
+
+  .Project__List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 5vw;
+    gap: 1rem;
+  }
+
+  @mixin projectCard {
+    //so lets call this the first draft - there are a couple of different ways to do this and I'm not sure what my preference is
+    display: flex;
+    padding: 1rem;
+    max-height: min-content;
+    flex-direction: row;
+    animation: slideIn 2s;
+  }
+  .Projects__Heading {
+    margin: 0.5rem;
+  }
+
+  .Project__Card {
+    @include projectCard();
+
+    .project__image {
+      height: 20rem;
+      border-radius: 1rem;
+      padding: 0.5rem;
+    }
+    .project__blurb {
+      max-width: 30vw;
+      padding: 0.5rem;
     }
 
-    .skillsGallery {
+    .project__links {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 3rem;
+
+      .externalLinkLogo__ForLinks {
+        height: 2rem;
+        border-radius: 10%;
+      }
+      .githubLogo__ForLinks {
+        height: 2rem;
+        border-radius: 50%;
+      }
     }
   }
 
-  .projectsPage {
-    background-color: $secondaryColor;
+  //TODO CARDS FOR EACH PROJECT
+}
+
+.contactMe {
+  color: $tertiaryColor;
+  background-color: $secondaryColor;
+  @include frontItem();
+
+  a {
     color: $tertiaryColor;
-    @include frontItem();
-    width: 100%;
+  }
+  .linkedinLogo__ForLinks {
+    height: 3rem;
+    border-radius: 50%;
+  }
+  .githubLogo__ForLinks {
+    height: 3rem;
+    border-radius: 50%;
+  }
+}
 
-    .Project__List {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: left;
-      padding-left: 5vw;
-      gap: 1rem;
-    }
+.background__ObjectGroup {
+  top: 0;
+  position: fixed;
+  transition: 1s;
 
-    @mixin projectCard {
-      //so lets call this the first draft - there are a couple of different ways to do this and I'm not sure what my preference is
-      display: flex;
-      padding: 1rem;
-      max-height: min-content;
-      flex-direction: row;
-      animation: slideIn 2s;
-    }
-    .Projects__Heading {
-      margin: 0.5rem;
-    }
+  #Object1 {
+    @include triangle();
 
-    .Project__Card {
-      @include projectCard();
-
-      .project__image {
-        height: 20rem;
-        border-radius: 1rem;
-        padding: 0.5rem;
-      }
-      .project__blurb {
-        max-width: 30vw;
-        padding: 0.5rem;
-      }
-
-      .project__links {
-        display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
-
-        .externalLinkLogo__ForLinks {
-          height: 2rem;
-          border-radius: 10%;
-        }
-        .githubLogo__ForLinks {
-          height: 2rem;
-          border-radius: 50%;
-        }
-      }
-    }
-
-    //TODO CARDS FOR EACH PROJECT
+    border-left: 19vw solid black;
+    transform: translateX(-30%);
+    z-index: -1;
   }
 
-  .contactMe {
-    color: $tertiaryColor;
-    background-color: $secondaryColor;
-    @include frontItem();
+  #Object2 {
+    @include triangle();
 
-    a {
-      color: $tertiaryColor;
-    }
-    .linkedinLogo__ForLinks {
-      height: 3rem;
-      border-radius: 50%;
-    }
-    .githubLogo__ForLinks {
-      height: 3rem;
-      border-radius: 50%;
-    }
+    border-left: 19vw solid rgb(29, 29, 29);
+    transform: translateX(-20%) translateY(-100%);
+    z-index: -2;
+  }
+  #Object3 {
+    @include triangle();
+
+    border-left: 19vw solid rgb(39, 39, 39);
+    transform: translateX(-10%) translateY(-200%);
+    z-index: -3;
+  }
+  #Object4 {
+    @include triangle();
+
+    border-left: 19vw solid rgb(49, 49, 49);
+    transform: translateX(0%) translateY(-300%);
+    z-index: -4;
   }
 
-  .background__ObjectGroup {
-    top: 0;
-    position: fixed;
-    transition: 1s;
+  #Object5 {
+    @include triangle();
 
-    #Object1 {
-      @include triangle();
+    border-left: 19vw solid rgb(59, 59, 59);
+    transform: translateX(10%) translateY(-400%);
+    z-index: -5;
+  }
+  #Object6 {
+    @include triangle();
 
-      border-left: 19vw solid black;
-      transform: translateX(-30%);
-      z-index: -1;
-    }
+    border-left: 19vw solid rgb(69, 69, 69);
+    transform: translateX(20%) translateY(-500%);
+    z-index: -6;
+  }
+  #Object7 {
+    @include triangle();
 
-    #Object2 {
-      @include triangle();
+    border-left: 19vw solid rgb(79, 79, 79);
+    transform: translateX(30%) translateY(-600%);
+    z-index: -7;
+  }
+  #Object8 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(29, 29, 29);
-      transform: translateX(-20%) translateY(-100%);
-      z-index: -2;
-    }
-    #Object3 {
-      @include triangle();
+    border-left: 19vw solid rgb(89, 89, 89);
+    transform: translateX(40%) translateY(-700%);
+    z-index: -8;
+  }
+  #Object9 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(39, 39, 39);
-      transform: translateX(-10%) translateY(-200%);
-      z-index: -3;
-    }
-    #Object4 {
-      @include triangle();
+    border-left: 19vw solid rgb(99, 99, 99);
+    transform: translateX(50%) translateY(-800%);
+    z-index: -9;
+  }
+  #Object10 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(49, 49, 49);
-      transform: translateX(0%) translateY(-300%);
-      z-index: -4;
-    }
+    border-left: 19vw solid rgb(109, 109, 109);
+    transform: translateX(60%) translateY(-900%);
+    z-index: -10;
+  }
+  #Object11 {
+    @include triangle();
 
-    #Object5 {
-      @include triangle();
+    border-left: 19vw solid rgb(119, 119, 119);
+    transform: translateX(70%) translateY(-1000%);
+    z-index: -11;
+  }
+  #Object12 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(59, 59, 59);
-      transform: translateX(10%) translateY(-400%);
-      z-index: -5;
-    }
-    #Object6 {
-      @include triangle();
+    border-left: 19vw solid rgb(129, 129, 129);
+    transform: translateX(80%) translateY(-1100%);
+    z-index: -12;
+  }
+  #Object13 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(69, 69, 69);
-      transform: translateX(20%) translateY(-500%);
-      z-index: -6;
-    }
-    #Object7 {
-      @include triangle();
+    border-left: 19vw solid rgb(139, 139, 139);
+    transform: translateX(90%) translateY(-1200%);
+    z-index: -13;
+  }
+  #Object14 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(79, 79, 79);
-      transform: translateX(30%) translateY(-600%);
-      z-index: -7;
-    }
-    #Object8 {
-      @include triangle();
+    border-left: 19vw solid rgb(149, 149, 149);
+    transform: translateX(100%) translateY(-1300%);
+    z-index: -14;
+  }
+  #Object15 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(89, 89, 89);
-      transform: translateX(40%) translateY(-700%);
-      z-index: -8;
-    }
-    #Object9 {
-      @include triangle();
+    border-left: 19vw solid rgb(159, 159, 159);
+    transform: translateX(110%) translateY(-1400%);
+    z-index: -15;
+  }
+  #Object16 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(99, 99, 99);
-      transform: translateX(50%) translateY(-800%);
-      z-index: -9;
-    }
-    #Object10 {
-      @include triangle();
+    border-left: 19vw solid rgb(169, 169, 169);
+    transform: translateX(120%) translateY(-1500%);
+    z-index: -16;
+  }
+  #Object17 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(109, 109, 109);
-      transform: translateX(60%) translateY(-900%);
-      z-index: -10;
-    }
-    #Object11 {
-      @include triangle();
+    border-left: 19vw solid rgb(179, 179, 179);
+    transform: translateX(130%) translateY(-1600%);
+    z-index: -17;
+  }
+  #Object18 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(119, 119, 119);
-      transform: translateX(70%) translateY(-1000%);
-      z-index: -11;
-    }
-    #Object12 {
-      @include triangle();
+    border-left: 19vw solid rgb(189, 189, 189);
+    transform: translateX(140%) translateY(-1700%);
+    z-index: -18;
+  }
+  #Object19 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(129, 129, 129);
-      transform: translateX(80%) translateY(-1100%);
-      z-index: -12;
-    }
-    #Object13 {
-      @include triangle();
+    border-left: 19vw solid rgb(199, 199, 199);
+    transform: translateX(150%) translateY(-1800%);
+    z-index: -19;
+  }
+  #Object20 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(139, 139, 139);
-      transform: translateX(90%) translateY(-1200%);
-      z-index: -13;
-    }
-    #Object14 {
-      @include triangle();
+    border-left: 19vw solid rgb(209, 209, 209);
+    transform: translateX(160%) translateY(-1900%);
+    z-index: -20;
+  }
+  #Object21 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(149, 149, 149);
-      transform: translateX(100%) translateY(-1300%);
-      z-index: -14;
-    }
-    #Object15 {
-      @include triangle();
+    border-left: 19vw solid rgb(219, 219, 219);
+    transform: translateX(170%) translateY(-2000%);
+    z-index: -21;
+  }
+  #Object22 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(159, 159, 159);
-      transform: translateX(110%) translateY(-1400%);
-      z-index: -15;
-    }
-    #Object16 {
-      @include triangle();
+    border-left: 19vw solid rgb(229, 229, 229);
+    transform: translateX(180%) translateY(-2100%);
+    z-index: -22;
+  }
+  #Object23 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(169, 169, 169);
-      transform: translateX(120%) translateY(-1500%);
-      z-index: -16;
-    }
-    #Object17 {
-      @include triangle();
+    border-left: 19vw solid rgb(239, 239, 239);
+    transform: translateX(190%) translateY(-2200%);
+    z-index: -23;
+  }
+  #Object24 {
+    @include triangle();
 
-      border-left: 19vw solid rgb(179, 179, 179);
-      transform: translateX(130%) translateY(-1600%);
-      z-index: -17;
-    }
-    #Object18 {
-      @include triangle();
-
-      border-left: 19vw solid rgb(189, 189, 189);
-      transform: translateX(140%) translateY(-1700%);
-      z-index: -18;
-    }
-    #Object19 {
-      @include triangle();
-
-      border-left: 19vw solid rgb(199, 199, 199);
-      transform: translateX(150%) translateY(-1800%);
-      z-index: -19;
-    }
-    #Object20 {
-      @include triangle();
-
-      border-left: 19vw solid rgb(209, 209, 209);
-      transform: translateX(160%) translateY(-1900%);
-      z-index: -20;
-    }
-    #Object21 {
-      @include triangle();
-
-      border-left: 19vw solid rgb(219, 219, 219);
-      transform: translateX(170%) translateY(-2000%);
-      z-index: -21;
-    }
-    #Object22 {
-      @include triangle();
-
-      border-left: 19vw solid rgb(229, 229, 229);
-      transform: translateX(180%) translateY(-2100%);
-      z-index: -22;
-    }
-    #Object23 {
-      @include triangle();
-
-      border-left: 19vw solid rgb(239, 239, 239);
-      transform: translateX(190%) translateY(-2200%);
-      z-index: -23;
-    }
-    #Object24 {
-      @include triangle();
-
-      border-left: 19vw solid rgb(249, 249, 249);
-      transform: translateX(200%) translateY(-2300%);
-      z-index: -24;
-    }
+    border-left: 19vw solid rgb(249, 249, 249);
+    transform: translateX(200%) translateY(-2300%);
+    z-index: -24;
   }
 }
