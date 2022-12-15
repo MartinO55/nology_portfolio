@@ -129,6 +129,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
 .aboutMe .skillsGallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projectsPage {
