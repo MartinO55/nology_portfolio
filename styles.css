@@ -84,6 +84,7 @@ body .landingPage {
 }
 body .landingPage header {
   text-align: right;
+  margin-top: 10rem;
   font-size: 550%;
   -webkit-animation: slideIn 1.3s;
           animation: slideIn 1.3s;
@@ -92,6 +93,7 @@ body .landingPage .arrow_set--forAnimation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 5rem;
 }
 body .landingPage .arrow_set--forAnimation .arrow {
   margin: 0.5rem;
@@ -547,7 +549,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   body .landingPage {
     font-size: 35%;
     padding-top: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 25rem;
   }
   body .landingPage header {
     padding-top: 5rem;
