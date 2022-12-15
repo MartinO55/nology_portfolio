@@ -15,3 +15,23 @@ Thank you for taking the time to view my portfolio. I look forward to the opport
 Sincerely,
 
 Martin Olson
+
+## Links
+
+Main repo: <https://github.com/MartinO55/Portfolio>
+Live Site: <https://martino55.github.io/Portfolio/>
+
+## About
+
+This is the beta version of my portfolio, short several portfolio projects and some polish on the wording of different sections. The project was built entirely in HTML and CSS, with SCSS used to handle the styling, and the hosting done on Github Pages. The CSS layout is done entirely with flex in order to make the design more responsive on various screen sizes, with different media breakpoints for tablets and phones. The site is built as a single page, with different sections tagged with appropriate id's to allow the links to jump to them. The gradient background is actually generated entirely with SCSS styling used to create triangles of appropriate colour, then translating them into position at the top of the screen and setting them on descending Z-indexes, allowing them to be tapped individually for animation or recoloring at a later date. They can also be resized directly for different screen sizes in the media breakpoints, meaning the background keeps the desired design regardless of screen size or resolution.
+
+The various icons were sourced from <https://fontawesome.com/icons> and <https://icons8.com/>, except for the 'spring' icon, which had to be sources from google images as neither of these sites had an option for this one. this tech stack is partially aspirational at curent, with several of the technologies not scheduled until later in the course.
+
+Currently the portfolio section has two projects in it, a live marketplace website and an android unity game, along with placeholder slots for several more.
+
+In the contect section you can find links to github, linkedIn, an email link and a resume for download.
+
+## Techstack
+
+- HTML
+- CSS/SCSS
