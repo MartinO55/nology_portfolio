@@ -21,6 +21,24 @@ Martin Olson
 Main repo: <https://github.com/MartinO55/Portfolio>
 Live Site: <https://martino55.github.io/Portfolio/>
 
+## Reqirements
+
+- You need to have it as a public repository on GitHub
+- In the repo you will also need a README.md with a short intro to the project.
+- You are to use SCSS for styling.
+- !!! Responsiveness is vital – use Grid, Flex, whatever you wish but the site must look good on mobile phones.
+  VERY CRITICAL! : You will need to make sure that your website looks good on phones, tablets and laptops (use media queries for at least checking whether the device is a mobile phone)
+- You must use BEM naming convention for scss selectors.
+- You must have the project hosted using github pages.
+
+Your Portfolio should have the following section:
+
+- A landing page/section with your name and title on it.
+- An About page/section with a little bit about you
+- A Tech stacks/skills page/section with all the techs you have learned during the course
+- A Project page/section with all your projects (use placeholder images and text at the beginning to render your website as it would with actual projects) - each project should have a little description, a link to a live version and a link to the matching GitHub Repo (using a README.md at the root of the repo to include how you went about coding for that project)
+- A Contact page/section with your email, GitHub profile link, LinkedIn profile link
+
 ## About
 
 This is the beta version of my portfolio, short several portfolio projects and some polish on the wording of different sections. The project was built entirely in HTML and CSS, with SCSS used to handle the styling, and the hosting done on Github Pages. The CSS layout is done entirely with flex in order to make the design more responsive on various screen sizes, with different media breakpoints for tablets and phones. The site is built as a single page, with different sections tagged with appropriate id's to allow the links to jump to them. The gradient background is actually generated entirely with SCSS styling used to create triangles of appropriate colour, then translating them into position at the top of the screen and setting them on descending Z-indexes, allowing them to be tapped individually for animation or recoloring at a later date. They can also be resized directly for different screen sizes in the media breakpoints, meaning the background keeps the desired design regardless of screen size or resolution.
