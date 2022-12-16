@@ -166,6 +166,11 @@ body {
   @include frontItem();
   .contactMe__links {
     display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  .contactMe__heading {
+    text-align: center;
   }
 
   a {

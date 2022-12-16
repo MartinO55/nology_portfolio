@@ -219,6 +219,11 @@ body .landingPage .arrow_set--forAnimation .arrow {
 }
 .contactMe .contactMe__links {
   display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.contactMe .contactMe__heading {
+  text-align: center;
 }
 .contactMe a {
   color: #0d1821;
