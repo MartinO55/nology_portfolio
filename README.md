@@ -18,8 +18,10 @@ Martin Olson
 
 ## Links
 
-Main repo: <https://github.com/MartinO55/Portfolio>
-Live Site: <https://martino55.github.io/Portfolio/>
+- These links probably aren't final, but github pages throws a tantrum when I fix them, so that will be a last step
+
+Main repo: <https://github.com/MartinO55/nology_portfolio>
+Live Site: <https://martino55.github.io/nology_portfolio/>
 
 ## Reqirements
 
