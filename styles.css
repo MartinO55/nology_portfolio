@@ -114,6 +114,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   -webkit-animation: bounceAndColor 2s infinite;
           animation: bounceAndColor 2s infinite;
 }
+
 .aboutMe {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
@@ -152,16 +153,25 @@ body .landingPage .arrow_set--forAnimation .arrow {
 }
 .projectsPage .Project__Card {
   display: flex;
-  padding: 1rem;
+  padding: 0.1rem;
   max-height: -webkit-min-content;
   max-height: -moz-min-content;
   max-height: min-content;
   flex-direction: row;
   -webkit-animation: slideIn 2s;
           animation: slideIn 2s;
+  border: 2px solid rgba(46, 45, 45, 0.849);
+  border-radius: 1rem;
+}
+.projectsPage .Project__Card:hover {
+  transform: rotateX(5deg);
+  box-shadow: 0rem 0rem 1.5rem rgba(39, 135, 238, 0.7137254902);
+}
+.projectsPage .Project__Card .project__title {
+  width: 10rem;
 }
 .projectsPage .Project__Card .project__image {
-  height: 20rem;
+  height: 9rem;
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -543,6 +553,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   transform: translateX(200%) translateY(-2300%);
   z-index: -24;
 }
+
 @media only screen and (max-width: 500px) {
   body .Navbar {
     font-size: 85%;
@@ -610,7 +621,7 @@ body .background__ObjectGroup #Object24 {
     border-bottom: 270vw solid transparent;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
+@media only screen and (min-width: 501px) and (max-width: 1100px) {
   body .landingPage {
     padding-top: 2rem;
   }
@@ -622,13 +633,13 @@ body .background__ObjectGroup #Object24 {
   }
   body .projectsPage .Project__Card {
     flex-direction: column;
-    padding-left: 1vw !important;
+    padding-left: 0.5vw !important;
   }
   body .projectsPage .project__image {
-    max-height: 22rem;
+    max-height: 15rem;
   }
   body .projectsPage .project__blurb {
-    max-width: 90vw !important;
+    max-width: 85vw !important;
   }
   body .projectsPage .project__links {
     flex-direction: row !important;

@@ -18,10 +18,10 @@
   border-right: 10vw solid transparent;
   border-bottom: 100vw solid transparent;
 
-  &:hover {
-    //for example - this impacts each triangle in the background separately, but doesnt work through the foreground elements
-    //border-left: 19vw solid red !important;
-  }
+  //   &:hover {
+  //     //for example - this impacts each triangle in the background separately, but doesnt work through the foreground elements
+  //     //border-left: 19vw solid red !important;
+  //   }
 }
 @mixin square {
   /*Scale the x or y axis in the transform function to create a rectangle*/
@@ -48,8 +48,19 @@
 @mixin projectCard {
   //so lets call this the first draft - there are a couple of different ways to do this and I'm not sure what my preference is
   display: flex;
-  padding: 1rem;
+  padding: 0.1rem;
   max-height: min-content;
   flex-direction: row;
   animation: slideIn 2s;
+  border: 2px solid rgba(46, 45, 45, 0.849);
+  border-radius: 1rem;
+
+  &:hover {
+    transform: rotateX(5deg);
+    box-shadow: 0rem 0rem 1.5rem $secondaryColor;
+  }
+
+  .project__title {
+    width: 10rem;
+  }
 }

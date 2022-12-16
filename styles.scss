@@ -1,6 +1,6 @@
-@import "theme";
-@import "mixins";
-@import "animations";
+@import "_theme";
+@import "_mixins";
+@import "_animations";
 
 /*so I think we want everything to slide in left to*/
 
@@ -116,7 +116,7 @@ body {
     @include projectCard();
 
     .project__image {
-      height: 20rem;
+      height: 9rem;
       border-radius: 1rem;
       padding: 0.5rem;
     }
@@ -340,6 +340,6 @@ body {
 }
 
 //so I didn't know this but breakpoints have to be after all the styling, not before. which means we import them down here
-@import "media_breakpoints";
+@import "_media_breakpoints";
 
 //for testing purposes, everything gets written here, then moved later

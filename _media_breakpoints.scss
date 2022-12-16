@@ -94,13 +94,13 @@
     .projectsPage {
       .Project__Card {
         flex-direction: column;
-        padding-left: 1vw !important;
+        padding-left: 0.5vw !important;
       }
       .project__image {
-        max-height: 22rem;
+        max-height: 15rem;
       }
       .project__blurb {
-        max-width: 90vw !important; //for some reason this has to be over written here, I can't just redefine it
+        max-width: 85vw !important; //for some reason this has to be over written here, I can't just redefine it
       }
 
       .project__links {
