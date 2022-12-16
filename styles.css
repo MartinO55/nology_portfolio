@@ -229,13 +229,14 @@ body .landingPage .arrow_set--forAnimation .arrow {
   color: #0d1821;
   padding: 1rem;
 }
-.contactMe .linkedinLogo__ForLinks {
+.contactMe .Logo__forContacts {
   height: 3rem;
-  border-radius: 50%;
+  border-radius: 10%;
+  transition: 0.1s;
+  padding: 1rem;
 }
-.contactMe .githubLogo__ForLinks {
-  height: 3rem;
-  border-radius: 50%;
+.contactMe .Logo__forContacts:hover {
+  background-color: rgba(39, 135, 238, 0.7137254902);
 }
 
 .background__ObjectGroup {

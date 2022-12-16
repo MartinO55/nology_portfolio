@@ -177,13 +177,15 @@ body {
     color: $tertiaryColor;
     padding: 1rem;
   }
-  .linkedinLogo__ForLinks {
+  .Logo__forContacts {
     height: 3rem;
-    border-radius: 50%;
-  }
-  .githubLogo__ForLinks {
-    height: 3rem;
-    border-radius: 50%;
+    border-radius: 10%;
+    transition: 0.1s;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
   }
 }
 
