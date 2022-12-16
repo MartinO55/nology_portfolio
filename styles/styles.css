@@ -21,21 +21,21 @@
 @-webkit-keyframes bounceAndColor {
   from {
     transform: scale(-100%);
-    border-bottom: 2rem solid rgba(35, 217, 220, 0.5490196078);
+    border-bottom: 2rem solid #da6c05;
   }
   to {
     transform: scale(-130%);
-    border-bottom: 2rem solid rgba(39, 135, 238, 0.7137254902);
+    border-bottom: 2rem solid rgba(250, 190, 134, 0.7137254902);
   }
 }
 @keyframes bounceAndColor {
   from {
     transform: scale(-100%);
-    border-bottom: 2rem solid rgba(35, 217, 220, 0.5490196078);
+    border-bottom: 2rem solid #da6c05;
   }
   to {
     transform: scale(-130%);
-    border-bottom: 2rem solid rgba(39, 135, 238, 0.7137254902);
+    border-bottom: 2rem solid rgba(250, 190, 134, 0.7137254902);
   }
 }
 /*so I think we want everything to slide in left to*/
@@ -71,7 +71,7 @@ body .Navbar .NavLinks a {
   color: black;
 }
 body .Navbar .NavLinks a:hover {
-  background-color: rgba(39, 135, 238, 0.7137254902);
+  background-color: rgba(250, 190, 134, 0.7137254902);
   cursor: pointer;
 }
 body .landingPage {
@@ -87,14 +87,21 @@ body .landingPage header {
   text-align: right;
   margin-top: 10rem;
   font-size: 550%;
-  -webkit-animation: slideIn 1.3s;
-          animation: slideIn 1.3s;
+  -webkit-animation: slideIn 1s;
+          animation: slideIn 1s;
+}
+body .landingPage .divider {
+  height: 2px;
+  width: 100vw;
+  border: 0;
+  background: #0d1821;
 }
 body .landingPage .arrow_set--forAnimation {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 5rem;
+  margin-top: 2.3rem;
 }
 body .landingPage .arrow_set--forAnimation .arrow {
   margin: 0.5rem;
@@ -109,7 +116,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   border-bottom: 100vw solid transparent;
   border-left: 2rem solid transparent;
   border-right: 2rem solid transparent;
-  border-bottom: 2rem solid rgba(35, 217, 220, 0.5490196078);
+  border-bottom: 2rem solid #da6c05;
   border-radius: 0.2rem;
   transform: rotateX(180deg);
   -webkit-animation: bounceAndColor 2s infinite;
@@ -120,8 +127,14 @@ body .landingPage .arrow_set--forAnimation .arrow {
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
   z-index: 1;
-  background-color: rgba(39, 135, 238, 0.7137254902);
+  background-color: rgba(250, 190, 134, 0.7137254902);
   color: #0d1821;
+}
+.aboutMe .aboutMe__Header {
+  margin: 1rem;
+}
+.aboutMe .aboutMe__blurb {
+  margin: 1rem;
 }
 .aboutMe .mySkills__img {
   height: 4rem;
@@ -131,7 +144,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   transition: 0.1s;
 }
 .aboutMe .mySkills__img:hover {
-  background-color: rgba(39, 135, 238, 0.7137254902);
+  background-color: rgba(250, 190, 134, 0.7137254902);
 }
 .aboutMe .skillsGallery {
   display: flex;
@@ -140,7 +153,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
 }
 
 .projectsPage {
-  background-color: rgba(39, 135, 238, 0.7137254902);
+  background-color: rgba(250, 190, 134, 0.7137254902);
   color: #0d1821;
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
   position: relative;
@@ -175,8 +188,8 @@ body .landingPage .arrow_set--forAnimation .arrow {
 }
 .projectsPage .Project__Card:hover {
   transform: rotateX(5deg);
-  box-shadow: 0rem 0rem 1.5rem rgba(39, 135, 238, 0.7137254902);
-  background-color: rgba(39, 135, 238, 0.7137254902);
+  box-shadow: 0rem 0rem 2rem rgba(250, 190, 134, 0.7137254902);
+  background-color: rgba(250, 190, 134, 0.7137254902);
 }
 .projectsPage .Project__Card .project__title {
   width: 10rem;
@@ -210,7 +223,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
 
 .contactMe {
   color: #0d1821;
-  background-color: rgba(39, 135, 238, 0.7137254902);
+  background-color: rgba(250, 190, 134, 0.7137254902);
   padding-top: 1rem;
   padding-bottom: 1rem;
   /*this works fine to keep stuff up front, the position relative is critical to making the z index work*/
@@ -230,13 +243,13 @@ body .landingPage .arrow_set--forAnimation .arrow {
   padding: 1rem;
 }
 .contactMe .Logo__forContacts {
-  height: 3rem;
+  height: 2.4rem;
   border-radius: 10%;
   transition: 0.1s;
   padding: 1rem;
 }
 .contactMe .Logo__forContacts:hover {
-  background-color: rgba(39, 135, 238, 0.7137254902);
+  background-color: rgba(250, 190, 134, 0.7137254902);
 }
 
 .background__ObjectGroup {

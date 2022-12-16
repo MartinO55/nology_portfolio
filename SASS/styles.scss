@@ -1,6 +1,7 @@
-@import "_theme";
-@import "_mixins";
-@import "_animations";
+@use "_theme";
+@use "_mixins";
+@use "_media_breakpoints";
+@use "_animations";
 
 /*so I think we want everything to slide in left to*/
 
@@ -49,11 +50,27 @@ body {
     display: flex;
     justify-content: right;
     width: 100%;
+
+    // .landingPage__name {//dont like this effect
+    //   transition: 2s;
+
+    //   &:hover {
+    //     color: $primaryColor;
+    //   }
+    // }
+
     header {
       text-align: right;
       margin-top: 10rem;
       font-size: 550%; //sizing is right on desktop for design purposes, but fails on mobile
-      animation: slideIn 1.3s;
+      animation: slideIn 1s;
+    }
+
+    .divider {
+      height: 2px;
+      width: 100vw;
+      border: 0;
+      background: $tertiaryColor;
     }
 
     .arrow_set--forAnimation {
@@ -62,6 +79,7 @@ body {
       flex-direction: column;
       align-items: center;
       margin-right: 5rem;
+      margin-top: 2.3rem;
 
       .arrow {
         margin: 0.5rem;
@@ -81,6 +99,14 @@ body {
   @include frontItem();
   background-color: $secondaryColor;
   color: $tertiaryColor;
+
+  .aboutMe__Header {
+    margin: 1rem;
+  }
+
+  .aboutMe__blurb {
+    margin: 1rem;
+  }
 
   .mySkills__img {
     height: 4rem;
@@ -178,7 +204,7 @@ body {
     padding: 1rem;
   }
   .Logo__forContacts {
-    height: 3rem;
+    height: 2.4rem;
     border-radius: 10%;
     transition: 0.1s;
     padding: 1rem;
@@ -367,6 +393,5 @@ body {
 }
 
 //so I didn't know this but breakpoints have to be after all the styling, not before. which means we import them down here
-@import "_media_breakpoints";
 
 //for testing purposes, everything gets written here, then moved later
