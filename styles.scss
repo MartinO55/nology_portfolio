@@ -104,19 +104,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    padding-left: 5vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
     gap: 1rem;
   }
 
   .Projects__Heading {
-    margin: 0.5rem;
+    margin: 1rem;
   }
 
   .Project__Card {
     @include projectCard();
 
+    .project__title {
+      margin: 1rem;
+    }
     .project__image {
-      height: 9rem;
+      height: 16rem;
       border-radius: 1rem;
       padding: 0.5rem;
     }
@@ -129,6 +133,7 @@ body {
       display: flex;
       flex-direction: column;
       margin-top: 3rem;
+      margin-right: 1rem;
 
       .externalLinkLogo__ForLinks {
         height: 2rem;

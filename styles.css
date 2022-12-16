@@ -145,11 +145,12 @@ body .landingPage .arrow_set--forAnimation .arrow {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  padding-left: 5vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
   gap: 1rem;
 }
 .projectsPage .Projects__Heading {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 .projectsPage .Project__Card {
   display: flex;
@@ -170,8 +171,11 @@ body .landingPage .arrow_set--forAnimation .arrow {
 .projectsPage .Project__Card .project__title {
   width: 10rem;
 }
+.projectsPage .Project__Card .project__title {
+  margin: 1rem;
+}
 .projectsPage .Project__Card .project__image {
-  height: 9rem;
+  height: 16rem;
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -183,6 +187,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
+  margin-right: 1rem;
 }
 .projectsPage .Project__Card .project__links .externalLinkLogo__ForLinks {
   height: 2rem;
@@ -577,7 +582,7 @@ body .landingPage .arrow_set--forAnimation .arrow {
     padding-left: 1vw !important;
   }
   body .projectsPage .project__image {
-    max-height: 10em;
+    max-height: 9em;
   }
   body .projectsPage .project__blurb {
     max-width: 90vw !important;
