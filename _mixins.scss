@@ -48,16 +48,18 @@
 @mixin projectCard {
   //so lets call this the first draft - there are a couple of different ways to do this and I'm not sure what my preference is
   display: flex;
-  padding: 0.1rem;
+  padding: 1rem;
   max-height: min-content;
   flex-direction: row;
   animation: slideIn 2s;
   border: 2px solid rgba(46, 45, 45, 0.849);
   border-radius: 1rem;
+  transition: 0.1s;
 
   &:hover {
     transform: rotateX(5deg);
     box-shadow: 0rem 0rem 1.5rem $secondaryColor;
+    background-color: $secondaryColor;
   }
 
   .project__title {

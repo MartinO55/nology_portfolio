@@ -5,6 +5,7 @@
 /*so I think we want everything to slide in left to*/
 
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden; /*keeps the background from screwing with sizing on mobile devices*/
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -85,6 +86,12 @@ body {
     height: 4rem;
     border-radius: 0.3rem;
     margin: 1rem;
+    padding: 0.5rem;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
   }
 
   .skillsGallery {
@@ -99,6 +106,8 @@ body {
   color: $tertiaryColor;
   @include frontItem();
   width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 
   .Project__List {
     display: flex;
@@ -152,10 +161,16 @@ body {
 .contactMe {
   color: $tertiaryColor;
   background-color: $secondaryColor;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   @include frontItem();
+  .contactMe__links {
+    display: flex;
+  }
 
   a {
     color: $tertiaryColor;
+    padding: 1rem;
   }
   .linkedinLogo__ForLinks {
     height: 3rem;
